@@ -1,0 +1,24 @@
+/* styles.css */
+.container {
+    max-width: 600px;
+}
+h1, h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+.flashes {
+    list-style: none;
+    padding: 0;
+}
+
+.flashes .info {
+    color: green;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.flashes .warning {
+    color: red;
+    padding: 10px;
+    margin: 10px 0;
+}
