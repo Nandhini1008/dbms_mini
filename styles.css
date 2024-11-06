@@ -1,24 +1,163 @@
-/* styles.css */
-.container {
-    max-width: 600px;
-}
-h1, h2 {
-    color: #333;
-    margin-bottom: 1rem;
-}
-.flashes {
-    list-style: none;
+/* General reset */
+{
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.flashes .info {
-    color: green;
-    padding: 10px;
-    margin: 10px 0;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0eafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.flashes .warning {
-    color: red;
+.container {
+    display: flex;
+    width: 800px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.containerb {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    text-align: center;
+    margin: 20px;
+}
+
+.containerc {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.illustration {
+    width: 50%;
+    background-color: #f0f4fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Remove any padding */
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.illustration img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Make the image cover the container fully */
+}
+
+
+.login-form {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form h2 {
+    font-size: 1.8rem;
+    color: #1d3a73;
+    margin-bottom: 10px;
+}
+
+.login-form p {
+    color: #555555;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.input-group input:focus {
+    border-color: #1d3a73;
+    outline: none;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    color: #1d3a73;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #1d3a73;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #335a9c;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-buttons button {
+    padding: 10px;
+    background-color: #1d3a73;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.social-buttons button:hover {
+    background-color: #335a9c;
+}
+
+.signup-link a {
+    color: #1d3a73;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
 }

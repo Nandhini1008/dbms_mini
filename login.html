@@ -2,15 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Login</h1>
-    <form action="/login" method="POST">
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <button type="submit">Login</button>
-    </form>
-    <a href="/signup">Sign Up</a>
+    <div class="container">
+        <div class="illustration">
+            <img src="https://whctllc.com/wp-content/uploads/2019/06/medical-devices_wide-83ffd4a62d42a43586951e216009759357b7eb75.jpg">
+        </div>
+        <div class="login-form">
+            <h2>Student Login</h2>
+            <p>Hey, enter your details to sign in to your account</p>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username/Email</label>
+                    <input type="text" id="username" placeholder="Enter your username/email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <p><a href="#" class="forgot-password">Having Trouble in signing in?</a></p>
+                <button type="submit">Login In</button>
+            </form>
+            <p>Or Sign in with</p>
+            <a href="forgot_password.html">forgot password</a>
+            <div class="social-buttons">
+                <button onclick="signInWithGoogle()">Google</button>
+                <button onclick="signInWithFacebook()">Facebook</button>
+            </div>
+            <p>Don't have an account? <a href="create.html">Signup Now</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
